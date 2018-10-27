@@ -180,10 +180,12 @@ div.title p {
 }
 
 div.search {
-  height: 3rem;
+  height: 50px;
   margin: 48px 156px;
   border: 1px solid #d9d9d9;
-  line-height: 3em;
+  line-height: 30px;
+  padding: 9px 0;
+  box-sizing: border-box;
 }
 
 div.search-item {
@@ -205,7 +207,7 @@ div.search-item.address {
 div.search-item.address>input {
   display: block;
   box-sizing: border-box;
-  height: 3rem;
+  height: 30px;
   width: 100%;
   border: 0;
   padding: 0 0 0 12px;
@@ -220,7 +222,7 @@ div.search-item.domain {
 }
 
 div.search-item.domain>select {
-  height: 46px;
+  height: 30px;
   width: 80%;
   border: 0;
   margin: 0;
