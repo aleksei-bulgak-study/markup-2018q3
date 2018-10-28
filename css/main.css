@@ -37,7 +37,7 @@ header {
 
 .logo {
   padding-top: 26px;
-  float: left;
+  display: inline-block;
 }
 
 .header-nav {
@@ -181,7 +181,7 @@ div.title p {
 
 div.search {
   height: 50px;
-  margin: 48px 156px;
+  margin: 48px 156px 40px 156px;
   border: 1px solid #d9d9d9;
   line-height: 30px;
   padding: 9px 0;
@@ -233,7 +233,7 @@ div.search-item.domain>select {
 }
 
 div.price-per-domain {
-  margin-top: 50px;
+  margin: 0px 156px;
 }
 
 .price-per-domain>table.price-table {
@@ -270,4 +270,135 @@ table.price-table tr:nth-child(2) td::after {
   top: 0;
   right: 5%;
   width: 90%;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #949494;
+}
+
+footer div.logo {
+  padding-top: 16px;
+  position: relative;
+  left: -3px;
+}
+
+footer div.footer-nav {
+  float: right;
+  line-height: 73px;
+}
+
+footer div.footer-menu {
+  line-height: 35px;
+  border-bottom: 1px solid #393939;
+}
+
+div.footer-menu .footer-nav ul {
+  position: relative;
+  left: -3px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.footer-menu .footer-nav li {
+  display: inline-block;
+  margin-left: 43px;
+}
+
+div.footer-menu .footer-nav a {
+  display: inline-block;
+  color: #949494;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+div.footer-menu a>img {
+  filter: invert(60%) sepia(0%) saturate(218%) hue-rotate(181deg) brightness(100%) contrast(86%);
+}
+
+div.footer-menu .footer-nav a:hover {
+  color: white;
+}
+
+.footer-info>div {
+  float: left;
+  padding-top: 49px;
+  padding-bottom: 49px;
+  font-family: 'Lato Light';
+  font-size: 15px;
+}
+
+.footer-text {
+  width: 31%;
+  line-height: 1.733;
+  font-weight: 400;
+}
+
+.footer-text>p {
+  margin: 0;
+  padding-right: 55px;
+  border-right: 1px solid #393939;
+}
+
+.links {
+  width: 43%;
+  padding-left: 90px;
+  padding-right: 90px;
+  box-sizing: border-box;
+}
+
+.links>ul {
+  margin: 0%;
+}
+
+.links>ul>li {
+  display: inline-block;
+  width: 49%;
+  line-height: 1.8rem;
+  color: white;
+}
+
+.links>ul>li>a {
+  color: #949494;
+  text-decoration: none;
+}
+
+.links>ul>li>a:hover {
+  color: white;
+}
+
+.contact-details {
+  width: 26%;
+  padding-left: 77px;
+  position: relative;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+.contact-details p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.contact-details::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23%;
+  height: 60%;
+  border-right: 1px solid #393939;
+}
+
+.contact-details img {
+  margin-right: 10px;
+}
+
+.footer-info::after {
+  display: block;
+  content: "";
+  clear: both;
 }
