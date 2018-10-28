@@ -219,6 +219,7 @@ div.search-item.address>input {
 
 div.search-item.domain {
   width: 80px;
+  border-color: transparent;
 }
 
 div.search-item.domain>select {
@@ -231,12 +232,42 @@ div.search-item.domain>select {
   color: #d9d9d9;
 }
 
-div.search-item:last-child {
-  border: 0;
+div.price-per-domain {
+  margin-top: 50px;
 }
 
-div.separator {
-  display: inline;
-  border-right: 1px solid #d9d9d9;
-  margin: 5px 0;
+.price-per-domain>table.price-table {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  color: #d9d9d9;
+  line-height: 5.7rem;
+  font-size: 14px;
+}
+
+table.price-table tr {
+  padding: 10px 10px;
+}
+
+table.price-table td {
+  width: 25%;
+  position: relative;
+}
+
+table.price-table td:nth-child(n+2)::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #d9d9d9;
+  top: 15%;
+  left: -3px;
+  height: 75%;
+}
+
+table.price-table tr:nth-child(2) td::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #d9d9d9;
+  top: 0;
+  right: 5%;
+  width: 90%;
 }
