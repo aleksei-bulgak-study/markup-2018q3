@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @font-face {
   font-family: 'Myriad Pro';
   font-weight: bold;
@@ -11,7 +12,7 @@
 }
 
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   max-width: 1600px;
   min-width: 1600px;
   margin: 0 auto;
@@ -99,7 +100,7 @@ h1 {
 }
 
 .member a {
-  font-family: 'Lato';
+  font-family: Lato;
   font-weight: 700;
   color: white;
   text-decoration: none;
@@ -158,7 +159,7 @@ main div.title {
 }
 
 div.title {
-  font-family: 'Lato';
+  font-family: Lato;
   font-size: 14px;
   color: #a2a2a2;
 }
@@ -214,7 +215,7 @@ div.search-item.address>input {
   margin: 0;
   font-size: 15px;
   font-weight: 600;
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
 }
 
 div.search-item.domain {
@@ -272,6 +273,287 @@ table.price-table tr:nth-child(2) td::after {
   width: 90%;
 }
 
+/**
+* Packages
+*/
+
+div.packages {
+  min-height: 770px;
+  margin-top: 91px;
+}
+
+div.packages>div.logo {
+  width: 100%;
+  height: 383px;
+  padding: 0;
+  background: url(../images/package2.jpg) 0px 805px/cover;
+  position: relative;
+}
+
+div.packages>div.logo::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+div.packages div.available-packages {
+  position: relative;
+  height: 378px;
+  border-bottom: 2px dotted #d9d9d9;
+}
+
+div.packages div.packages-container {
+  position: absolute;
+  display: inline-grid;
+  top: -76%;
+  width: 100%;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+div.packages-container div.plan {
+  height: 565px;
+  width: 256px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 5;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/**
+* Package name
+*/
+
+div.plan>div.name {
+  text-align: center;
+}
+
+div.plan>div.name i {
+  font-size: 17px;
+  line-height: 50px;
+  text-align: center;
+  transform: rotate(47.5deg);
+}
+
+div.plan>div.name p:first-child {
+  margin-top: 34px;
+  margin-bottom: 11px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+div.plan>div.name {
+  height: 25%;
+  box-sizing: border-box;
+}
+
+div.plan>div.name>p {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: Lato;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+div.plan.basic {
+  border-top: 5px solid #f9d423;
+}
+
+div.plan.basic>div.name>p:first-child {
+  border-top: 5px solid transparent;
+  border-right: 5px solid #f9d423;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+  transform: rotate(-47.5deg);
+  color: #f9d423;
+}
+
+div.plan.normal {
+  border-top: 5px solid #7f8c8d;
+}
+
+div.plan.normal>div.name>p:first-child {
+  border-top: 5px solid transparent;
+  border-right: 5px solid #7f8c8d;
+  border-bottom: 5px solid #7f8c8d;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+  transform: rotate(-47.5deg);
+  color: #7f8c8d;
+}
+
+div.plan.big {
+  border-top: 5px solid #f85f40;
+}
+
+div.plan.big>div.name>p:first-child {
+  border-top: 5px solid transparent;
+  border-right: 5px solid #f85f40;
+  border-bottom: 5px solid #f85f40;
+  border-left: 5px solid #f85f40;
+  border-radius: 50%;
+  transform: rotate(-47.5deg);
+  color: #f85f40;
+}
+
+div.plan.biggest {
+  border-top: 5px solid #1abc9c;
+}
+
+div.plan.biggest>div.name>p:first-child {
+  border-top: 5px solid #1abc9c;
+  border-right: 5px solid #1abc9c;
+  border-bottom: 5px solid #1abc9c;
+  border-left: 5px solid #1abc9c;
+  border-radius: 50%;
+  color: #1abc9c;
+  transform: rotate(-47.5deg);
+}
+
+/**
+* Package description
+*/
+
+div.plan div.description {
+  position: relative;
+}
+
+div.description::before {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 78%;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  content: "";
+}
+
+div.description::after {
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  width: 78%;
+  height: 1px;
+  border-top: 1px solid #d9d9d9;
+  content: "";
+}
+
+div.plan>div.description {
+  display: inline-grid;
+  grid-template-columns: 90% 10%;
+  justify-items: stretch;
+  height: 51%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+div.plan>div.description>div:nth-child(2n+2) {
+  justify-self: end;
+}
+
+div.plan.basic>div.description>div:nth-child(2n+2) {
+  color: #f9d423;
+}
+
+div.plan.normal>div.description>div:nth-child(2n+2) {
+  color: #7f8c8d;
+}
+
+div.plan.big>div.description>div:nth-child(2n+2) {
+  color: #f85f40;
+}
+
+div.plan.biggest>div.description>div:nth-child(2n+2) {
+  color: #1abc9c;
+}
+
+div.plan>div.description>div:nth-child(2n+1) {
+  justify-self: start;
+  color: #cdcdcd;
+}
+
+/**
+* Package price
+*/
+
+div.plan>div.price {
+  height: 24%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+div.price>p {
+  position: relative;
+  margin: 0 0 18px 0;
+  padding-top: 30px;
+  font-size: 27px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+div.price>p::after {
+  position: absolute;
+  width: 53%;
+  left: 24%;
+  bottom: -2%;
+  border-bottom: 3px solid;
+  content: "";
+}
+
+div.plan.basic>div.price>p::after {
+  border-bottom-color: #f9d423;
+}
+
+div.plan.normal>div.price>p::after {
+  border-bottom-color: #7f8c8d;
+}
+
+div.plan.big>div.price>p::after {
+  border-bottom-color: #f85f40;
+}
+
+div.plan.biggest>div.price>p::after {
+  border-bottom-color: #1abc9c;
+}
+
+div.price span.currency {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: text-top;
+}
+
+div.price span.period {
+  font-size: 13px;
+  font-weight: normal;
+  color: #8d8d8d;
+  vertical-align: baseline;
+}
+
+div.price>a.select {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #282828;
+}
+
+/**
+ *  Footer
+ */
 footer {
   background-color: #2a2a2a;
   color: #949494;
@@ -326,7 +608,7 @@ div.footer-menu .footer-nav a:hover {
   float: left;
   padding-top: 49px;
   padding-bottom: 49px;
-  font-family: 'Lato Light';
+  font-family: Lato;
   font-size: 15px;
 }
 
