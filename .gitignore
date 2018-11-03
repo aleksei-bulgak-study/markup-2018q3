@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 .idea
 node_modules
 *.bundle.js
 *.log
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
