@@ -13,8 +13,7 @@
 
 body {
   font-family: Lato, Arial, sans-serif;
-  max-width: 1600px;
-  min-width: 1600px;
+  min-width: 1200px;
   margin: 0 auto;
   font-size: 16px;
 }
@@ -71,7 +70,7 @@ header {
 
 .banner {
   background-color: black;
-  background: url(./../images/header-bg.jpg) no-repeat top center;
+  background: url(./../images/header-bg.jpg) top center;
   height: 525px;
   padding-top: 419px;
   text-align: center;
@@ -676,7 +675,7 @@ div.comments {
 div.comments p {
   margin: 0 auto;
   padding-top: 47px;
-  width: 60%;
+  width: 50%;
   line-height: 29px;
 }
 
