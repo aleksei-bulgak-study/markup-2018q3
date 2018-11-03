@@ -35,7 +35,7 @@ header {
   border-bottom: 1px solid #28292b;
 }
 
-.logo {
+header .logo {
   padding-top: 26px;
   display: inline-block;
 }
@@ -652,7 +652,7 @@ div.profile div.social-networks {
   margin: 0 auto;
 }
 
-div.profile div.social-networks i{
+div.profile div.social-networks i {
   color: #bfbfbf
 }
 
@@ -677,6 +677,106 @@ div.comments p {
   padding-top: 47px;
   width: 50%;
   line-height: 29px;
+  font-weight: 400;
+}
+
+div.comments div.name {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+div.comments div.navigation {
+  margin-left: 25px;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+}
+
+div.comments div.navigation::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid white;
+  top: 25%;
+  left: -25%;
+  height: 85%;
+}
+
+div.comments div.navigation div.item {
+  height: 5px;
+  width: 5px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+div.comments div.navigation div.active {
+  background: white;
+}
+
+/**
+* functions
+*/
+
+div.functions {
+  height: 340px;
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 235px);
+  grid-template-rows: auto;
+  justify-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+div.functions>div.function {
+  text-align: center;
+}
+
+div.function div.logo {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+}
+
+div.function div.logo>i {
+  color: white;
+  line-height: 60px;
+  font-size: 28px;
+}
+
+div.function:first-child div.logo {
+  background-color: #f1c40f;
+}
+
+div.function:nth-child(2) div.logo {
+  background-color: #0faff1;
+}
+
+div.function:nth-child(3) div.logo {
+  background-color: #95a5a6;
+}
+
+div.function:nth-child(4) div.logo {
+  background-color: #f1540f;
+}
+
+div.functions div.name {
+  margin-top: 10px;
+}
+
+div.functions div.name p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div.function div.description {
+  margin-top: -10px;
 }
 
 /**
