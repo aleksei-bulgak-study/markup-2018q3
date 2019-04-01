@@ -1,0 +1,17 @@
+language: minimal
+
+branches:
+  except:
+    - gh-pages
+
+install:
+- cd markup-2018q3/
+
+deploy:
+  local-dir: ./markup-2018q3
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
